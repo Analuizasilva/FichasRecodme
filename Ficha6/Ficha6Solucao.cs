@@ -4,8 +4,8 @@ namespace Ficha6
 {
     public class Ficha6Solucao
     {
-        
-        #region Exercicio1
+
+        #region Exercicio1.1
         public static void Exercicio1()
         {
             Console.WriteLine(" What's your name? ");
@@ -19,7 +19,7 @@ namespace Ficha6
         }
 
         #endregion exercicio1
-        #region Exercicio2
+        #region Exercicio1.2
         public static void Exercicio2()
         {
             Console.WriteLine("Number1");
@@ -52,7 +52,7 @@ namespace Ficha6
             Console.WriteLine(" O resultado da soma é = " + soma);
         }
         #endregion
-        #region Exercicio3
+        #region Exercicio1.3
         public static void Exercicio3()
         {
             var total = LerEConverter();
@@ -82,7 +82,7 @@ namespace Ficha6
 
 
         #endregion
-        #region Exercicio4
+        #region Exercicio1.4
         public static void Exercicio4()
         {
             Console.WriteLine("Insira o primeiro numero");
@@ -98,7 +98,7 @@ namespace Ficha6
 
         }
         #endregion
-        #region Exercicio5
+        #region Exercicio1.5
         public static void Exercicio5a()
         {
             Console.WriteLine("Insira o primeiro numero");
@@ -122,11 +122,11 @@ namespace Ficha6
             var n2 = int.Parse(Console.ReadLine());
             Console.WriteLine(" Insira um numero! ");
             var n3 = int.Parse(Console.ReadLine());
-            Console.WriteLine(Calc1(n1, n2, n3)); 
+            Console.WriteLine(Calc1(n1, n2, n3));
         }
         public static int Calc1(int n1, int n2, int n3)
         {
-            return (n1 + n2) % n3; 
+            return (n1 + n2) % n3;
         }
 
         public static void Exerciocio5c()
@@ -136,16 +136,16 @@ namespace Ficha6
             Console.WriteLine(" Insera o 2º numero! ");
             var n2 = int.Parse(Console.ReadLine());
             Console.WriteLine("Insira o 3º numero !");
-            var n3 = int.Parse(Console. ReadLine());
+            var n3 = int.Parse(Console.ReadLine());
             Console.WriteLine("Insira o 4º numero !");
             var n4 = int.Parse(Console.ReadLine());
-            Console.WriteLine("O Resultado é = " + Calc2(n1,n2,n3,n4));
+            Console.WriteLine("O Resultado é = " + Calc2(n1, n2, n3, n4));
         }
         public static int Calc2(int n1, int n2, int n3, int n4)
         {
-            return n1 + n2 * n3/n4;
+            return n1 + n2 * n3 / n4;
         }
-         public static void Exercicio5d()
+        public static void Exercicio5d()
         {
             Console.WriteLine("Insira o numero 1");
             int n1 = int.Parse(Console.ReadLine());
@@ -159,14 +159,14 @@ namespace Ficha6
             int n5 = int.Parse(Console.ReadLine());
             Console.WriteLine("Insira o numero 6");
             int n6 = int.Parse(Console.ReadLine());
-            Console.WriteLine("O resutado é = " + Calc3 (n1, n2, n3, n4, n5, n6)); 
+            Console.WriteLine("O resutado é = " + Calc3(n1, n2, n3, n4, n5, n6));
         }
         public static int Calc3(int n1, int n2, int n3, int n4, int n5, int n6)
         {
-           return  n1 + n2 / 6 * 17 % 2;
+            return n1 + n2 / 6 * 17 % 2;
         }
         #endregion
-        #region Exercicio6
+        #region Exercicio1.6
         public static void Exercicio6()
         {
             Console.WriteLine("Insira um número!");
@@ -176,16 +176,16 @@ namespace Ficha6
         }
         public static void Tabuada(int num)
         {
-     
+
             for (int count = 1; count <= 10; count++)
             {
-             Console.WriteLine($"{num}*{count}={(num * count)}");   
+                Console.WriteLine($"{num}*{count}={(num * count)}");
             }
-          
-             
+
+
         }
         #endregion
-        #region Exercicio7
+        #region Exercicio1.7
         public static void Exercicio7()
         {
             Console.WriteLine("Insira o primeiro numero!");
@@ -199,7 +199,7 @@ namespace Ficha6
             return ((firstName + secondName) / 2);
         }
         #endregion
-        #region Exercicio8
+        #region Exercicio1.8
         public static void Exercicio8()
         {
             Console.WriteLine("Insira um numero!");
@@ -212,14 +212,14 @@ namespace Ficha6
             int n4 = int.Parse(Console.ReadLine());
             Console.WriteLine("Insira um numero!");
             int n5 = int.Parse(Console.ReadLine());
-            Console.WriteLine("A media dos numero é = "+CalcularMedia(n1,n2,n3,n4,n5));
+            Console.WriteLine("A media dos numero é = " + CalcularMedia(n1, n2, n3, n4, n5));
         }
         public static int CalcularMedia(int n1, int n2, int n3, int n4, int n5)
         {
             return ((n1 + n2 + n3 + n4 + n5) / 5);
         }
         #endregion
-        #region Exercicio9
+        #region Exercicio1.9
         public static void Exercicio9()
         {
             Console.WriteLine("Insira um numero!");
@@ -242,14 +242,94 @@ namespace Ficha6
             int n9 = int.Parse(Console.ReadLine());
             Console.WriteLine("Insira um numero!");
             int n10 = int.Parse(Console.ReadLine());
-            Console.WriteLine("A media dos numero é = " + CalcularMedia(n1, n2, n3, n4, n5,n6,n7,n8,n9,n10));
+            Console.WriteLine("A media dos numero é = " + CalcularMedia(n1, n2, n3, n4, n5, n6, n7, n8, n9, n10));
 
-             static int CalcularMedia(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9, int n10)
+            static int CalcularMedia(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9, int n10)
             {
                 return ((n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10) / 10);
             }
 
         }
+        #endregion
+        #region Exercicio1.10
+        public static void Exercicio10()
+        {
+            Console.WriteLine("Insira um caracter!");
+            var caracter = Console.ReadLine();
+            Console.WriteLine(caracter + " " + caracter + " " + caracter + "\n" + caracter + " " + caracter + " " + caracter + "\n" + caracter + " " + caracter + " " + caracter);
+
+
+        }
+
+        #endregion
+        #region Exercicio1.11
+        public static void Exercicio11()
+        {
+            Console.WriteLine("Insira o nome do produto!");
+            var nome = Console.ReadLine();
+            Console.WriteLine("Insira o preço do produto!");
+            double preco = double.Parse(Console.ReadLine());
+            Console.WriteLine("Insira a quantidade de produtos!");
+            int quant = int.Parse(Console.ReadLine());
+            Console.WriteLine($" O valor total da compra é =  R${(preco * quant)}");
+        }
+        #endregion
+        #region Exercicio2.1
+        public static void Exercicio2_1()
+        {
+            Console.WriteLine("Diz-me algo que eu não saiba");
+            var algo = Console.ReadLine();
+            Console.WriteLine($"Eu ja sabia que {algo}");
+        }
+        #endregion
+        #region Exercicio2.2
+        public static void Exercicio2_2()
+        {
+            Console.WriteLine("Insira o primeiro numero!");
+            int firstName = int.Parse(Console.ReadLine());
+            Console.WriteLine("Insira o segundo numero!");
+            int secondName = int.Parse(Console.ReadLine());
+            Console.WriteLine($"O primeiro numero é {firstName} e o segundo número é {secondName}");
+        }
+        #endregion
+        #region Exercicio2.3
+        public static void Exercicio2_3()
+        {
+            Console.WriteLine("Introduza uma temperatura");
+            int temp = int.Parse(Console.ReadLine());
+            Console.WriteLine("A temperatura em kelvin é = " + ConverterTempF(temp)
+                + "ºK" + " \n temperatura em fahrenheit é = " + ConverterTempK(temp) + "ºF");
+
+        }
+        public static int ConverterTempF(int temp)
+        {
+            int tempF = temp * 9 / 5 + 32;
+            return tempF;
+
+        }
+        public static double ConverterTempK(int temp)
+        {
+            double tempK = temp + 273.15;
+            return tempK;
+        }
+        #endregion
+        #region Exercicio3.1
+        public static void Exercicio3_1()
+        {
+            Console.WriteLine("Quantas horas?");
+            int hora = int.Parse(Console.ReadLine());
+            Console.WriteLine("Quantos minutos?");
+            int min = int.Parse(Console.ReadLine());
+            Console.WriteLine("Quantos segundos?");
+            int seg = int.Parse(Console.ReadLine());
+            Console.WriteLine(CalcularTotal());
+        }
+        public static int CalcularTotal(int hora, int min, int seg)
+        {
+            int total = hora * 3600 + min * 60 + seg;
+            return total;
+        }
+        
         #endregion
     }
 }

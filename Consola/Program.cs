@@ -19,7 +19,13 @@ namespace Consola
             //Ficha6Solucao.Exercicio6();
             //Ficha6Solucao.Exercicio7();
             //Ficha6Solucao.Exercicio8();
-            Ficha6Solucao.Exercicio9();
+            //Ficha6Solucao.Exercicio9();
+            //Ficha6Solucao.Exercicio10();
+            //Ficha6Solucao.Exercicio11();
+            //Ficha6Solucao.Exercicio2_1();
+            //Ficha6Solucao.Exercicio2_2();
+            //Ficha6Solucao.Exercicio2_3();
+            Ficha6Solucao.Exercicio3_1();
             //Ficha7Solucao.Exercicio1_1();
             //Ficha7Solucao.Exercicio1_2();
             //Ficha7Solucao.Exercicio1_3();

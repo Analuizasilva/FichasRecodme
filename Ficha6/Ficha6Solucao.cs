@@ -322,14 +322,36 @@ namespace Ficha6
             int min = int.Parse(Console.ReadLine());
             Console.WriteLine("Quantos segundos?");
             int seg = int.Parse(Console.ReadLine());
-            Console.WriteLine(CalcularTotal());
+            Console.WriteLine(CalcularHora(hora)+":"+ CalcularMin(min)+":"+seg);
         }
-        public static int CalcularTotal(int hora, int min, int seg)
+
+        public static int CalcularHora(int hora)
         {
-            int total = hora * 3600 + min * 60 + seg;
-            return total;
+            int horas = hora * 3600;
+            return horas; 
         }
-        
+        public static int CalcularMin(int min)
+        {
+            int minut = min * 60;
+            return minut;
+        }
+        #endregion
+        #region Exercicio 3.2
+        public static void Exercicio3_2()
+        {
+            Console.WriteLine("Qual é o raio? ");
+            int r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Perimetro = "+CalcularPerimetro(r)+"\nArea = "+CalcularPerimetro(r));
+        }
+        public static double CalcularPerimetro(int r)
+        {
+            double p = 2 * 3.14 * r;
+            return p;
+        } public static double CalcularArea(int r)
+        {
+            double a = 3.14 * r *r;
+            return a;
+        }
         #endregion
     }
 }

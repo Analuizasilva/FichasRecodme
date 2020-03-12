@@ -7,7 +7,7 @@ namespace Consola
     class Program
     {
          public static void Main(string[] args)
-        {
+        {   //FICHA6
             //Ficha6Solucao.Exercicio1();
             //Ficha6Solucao.Exercicio2();
             //Ficha6Solucao.Exercicio3();
@@ -26,17 +26,27 @@ namespace Consola
             //Ficha6Solucao.Exercicio2_2();
             //Ficha6Solucao.Exercicio2_3();
             //Ficha6Solucao.Exercicio3_1();
-            Ficha6Solucao.Exercicio3_2();
+            //Ficha6Solucao.Exercicio3_2();
+            //FICHA7
             //Ficha7Solucao.Exercicio1_1();
             //Ficha7Solucao.Exercicio1_2();
             //Ficha7Solucao.Exercicio1_3();
-            // Ficha7Solucao.Exercicio1_4();
-            // Ficha7Solucao.Exercicio1_5();
+            //Ficha7Solucao.Exercicio1_4();
+            //Ficha7Solucao.Exercicio1_5();
             //Ficha7Solucao.Exercicio1_6();
+            //Ficha7Solucao.Exercicio1_7();
+            //Ficha7Solucao.Exercicio1_8();
+            //Ficha7Solucao.Exercicio1_9();
+            //Ficha7Solucao.Exercicio1_10();
+            //Ficha7Solucao.Exercicio1_11();
+            //Ficha7Solucao.Exercicio1_12();
+            //Ficha7Solucao.Exercicio1_13();
+            //Ficha7Solucao.Exercicio2_1();
+            //Ficha7Solucao.Exercicio2_2();
+            //Ficha7Solucao.Exercicio2_3();
+            //Ficha7Solucao.Exercicio3_1();
+            Ficha7Solucao.Exercicio3_2();
+
         }
-
-
-
-
     }
 }

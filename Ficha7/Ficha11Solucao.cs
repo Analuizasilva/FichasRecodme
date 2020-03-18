@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Ficha7
+namespace Ficha11
 {
-    public class Ficha7Solucao
+    public class Ficha11Solucao
     {
         #region Exercicio 1.1
         public static void Exercicio1_1()
@@ -409,5 +409,6 @@ namespace Ficha7
         #endregion
     }
 }
+
 
 

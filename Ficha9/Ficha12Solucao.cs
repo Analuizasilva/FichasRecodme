@@ -421,7 +421,7 @@ namespace Ficha12
             }
             #endregion
 
-        #region Exercicio 1.16
+        #region Exercicio 1.16 Advinhar numero entre 1 e 100.
             public static void Exercicio1_16()
             {
                 var min = 1;

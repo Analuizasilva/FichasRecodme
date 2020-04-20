@@ -1,10 +1,9 @@
 ﻿using System;
 
-namespace Ficha6
+namespace Ficha10
 {
-    public class Ficha6Solucao
+    public class Ficha10Solucao
     {
-
         #region Exercicio1.1
         public static void Exercicio1()
         {

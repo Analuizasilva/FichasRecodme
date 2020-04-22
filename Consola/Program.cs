@@ -6,13 +6,18 @@ using Ficha10;
 using Ficha15;
 using Ficha16;
 using Ficha17;
+using Ficha24;
+using System;
+using System.Collections.Generic;
+using Ficha25;
 
 namespace Consola
 {
     class Program
     {
         public static void Main(string[] args)
-        {   //FICHA 10
+        {
+            #region Lista 10
             //Ficha10Solucao.Exercicio1();
             //Ficha10Solucao.Exercicio2();
             //Ficha10Solucao.Exercicio3();
@@ -32,8 +37,9 @@ namespace Consola
             //Ficha10Solucao.Exercicio2_3();
             //Ficha10Solucao.Exercicio3_1();
             //Ficha10Solucao.Exercicio3_2();
+            #endregion
 
-            //FICHA 11
+            #region Lista 11      
             //Ficha11Solucao.Exercicio1_1();
             //Ficha11Solucao.Exercicio1_2();
             //Ficha11Solucao.Exercicio1_3();
@@ -52,8 +58,9 @@ namespace Consola
             //Ficha11Solucao.Exercicio2_3();
             //Ficha11Solucao.Exercicio3_1();
             //Ficha11Solucao.Exercicio3_2();
+            #endregion
 
-            // FICHA 12
+            #region  Lista 12
             //Ficha12Solucao.Exercicio1_1();
             //Ficha12Solucao.Exercicio1_2();
             //Ficha12Solucao.Exercicio1_3();
@@ -70,20 +77,23 @@ namespace Consola
             //Ficha12Solucao.Exercicio1_14();
             //Ficha12Solucao.Exercicio1_15();
             //Ficha12Solucao.Exercicio1_16();
+            #endregion
 
-            //FICHA 13
+            #region Lista 13
             //Ficha13solucao.Calculadora();
             //Ficha13solucao.JogoDaVelha();
+            #endregion
 
-            //FICHA 14
+            #region Lista 14
             //Ficha14solucao.Exercicio_1();
             //Ficha14solucao.Exercicio_2();
             //Ficha14solucao.Exercicio_3();
             //Ficha14solucao.Exercicio_4();
             //Ficha14solucao.Exercicio_5();
             //Ficha14solucao.Exercicio_6();
+            #endregion
 
-            //FICHA 15
+            #region Lista 15
             //Ficha15solucao.Exercicio_1();
             //Ficha15solucao.Exercicio_2();
             //Ficha15solucao.Exercicio_3();
@@ -93,8 +103,9 @@ namespace Consola
             //Ficha15solucao.Exercicio_7();
             //Ficha15solucao.Exercicio_8();
             //Ficha15solucao.Exercicio_9();
+            #endregion
 
-            //Ficha 16
+            #region Lista 16  
             //Ficha16solucao.Exercicio1();
             //Ficha16solucao.Exercicio2();
             //Ficha16solucao.Exercicio3();
@@ -104,8 +115,9 @@ namespace Consola
             //Ficha16solucao.Exercicio7();
             //Ficha16solucao.Exercicio8('a');
             //Ficha16solucao.Exercicio8('t');
+            #endregion
 
-            //Ficha 17
+            #region Lista 17
             //Ficha17solucao.Exercicio1();
             //Ficha17solucao.Exercicio2();
             //Ficha17solucao.Exercicio3();
@@ -113,7 +125,153 @@ namespace Consola
             //Ficha17solucao.Exercicio5();
             //Ficha17solucao.Exercicio6();
             //Ficha17solucao.Exercicio7();
-            Ficha17solucao.Exercicio8();
+            //Ficha17solucao.Exercicio8();
+            //Ficha17solucao.Exercicio9();
+            //Ficha17solucao.Exercicio10();
+            //Ficha17solucao.Exercicio11();
+            //Ficha17solucao.Exercicio12();
+            //Ficha17solucao.Exercicio13();
+            #endregion
+
+            #region Lista 18 (Falta fazer)
+            #endregion
+
+            #region Lista 19 (Falta fazer)
+            #endregion
+
+            #region Lista 20 (Falta fazer)
+            #endregion
+
+            #region Lista 21 (Falta fazer)
+            #endregion
+
+            #region Lista 22 (Falta fazer)
+            #endregion
+
+            #region Lista 23 (Falta fazer)
+            #endregion
+
+            #region Lista 24
+            //Exercicio 2
+            //var veiculo = new Veiculo();
+            //veiculo.InserirMarca("VW");
+            //veiculo.InserirMarca("BMW");
+
+            //Exercicio 3
+            //var product = new Product();
+            //product.Price = 10;
+            //product.QuantityOfPossibleProductsToBuy(100);
+
+            //Exercicio 4
+            //var contaCorrente = new ContaCorrente();
+            //contaCorrente.Saldo = 1200;
+            //contaCorrente.VerificarSaldo();
+            //contaCorrente.Sacar(200);
+            //contaCorrente.VerificarSaldo();
+            //Console.WriteLine();
+            //contaCorrente.Depositar(600);
+            //contaCorrente.VerificarSaldo();
+            //Console.WriteLine();
+
+            //Exercicio 5
+            //var coordenadas = new List<Coordenadas>
+            //{
+            //new Coordenadas { CoordenadaX = "5", CoordenadaY = "7", Guardado = "Places" },
+            //new Coordenadas { CoordenadaX = "-2", CoordenadaY = "8", Guardado = "Pingo Doce" },
+            //new Coordenadas { CoordenadaX = "1", CoordenadaY = "-6", Guardado = "McDonalds" },
+            //};
+            //foreach (var coordenada in coordenadas)
+            //{
+            //    Console.WriteLine(coordenada);
+            //}          
+
+            //Exercicio 6
+            //var cartoes = new List<Cartao>();
+            //cartoes.Add(new Cartao
+            //{
+            //    Question = "De quem é a famosa frase “Penso, logo existo”?",
+            //    Answer = "Descartes",
+            //    Color = "Verde"
+            //});
+            //cartoes.Add(new Cartao
+            //{
+            //    Question = "Quais o menor e o maior país do mundo?",
+            //    Answer = "Vaticano e Rússia",
+            //    Color = "Azul"
+            //});
+            //cartoes.Add(new Cartao
+            //{
+            //    Question = "Atualmente, quantos elementos químicos a tabela periódica possui?",
+            //    Answer = "118",
+            //    Color = "Amarelo"
+            //});
+            //cartoes.Add(new Cartao
+            //{
+            //    Question = "Qual o número mínimo de jogadores numa partida de futebol?",
+            //    Answer = "7",
+            //    Color = "Vermelho"
+            //});
+            //cartoes.Add(new Cartao
+            //{
+            //    Question = "Em que período da pré-história o fogo foi descoberto?",
+            //    Answer = "Paleolítico",
+            //    Color = "Rosa"
+            //});
+
+            //Console.WriteLine("Escolha uma cor!(verde, azul, amarelo, vermelho, rosa)");
+            //var color = Console.ReadLine();
+            //Cartao cartaoEscolhido = null;
+
+            //foreach (var cartao in cartoes)
+            //{
+            //    if (cartao.Color == color)
+            //    {
+            //        cartaoEscolhido = cartao;
+            //    }
+            //}
+
+            //cartaoEscolhido.ShowQuestion();
+            //var answer = Console.ReadLine();
+            //cartaoEscolhido.CheckAnswer(answer);            
+
+            //Exercicio 7
+            //var teclas = new List<Tecla>
+            //{
+            //    new Tecla { Color = "Black", Key = "D", MusicalNote = "Dó" },
+            //    new Tecla { Color = "White", Key = "R", MusicalNote = "Ré" },
+            //    new Tecla { Color = "Pink", Key = "M", MusicalNote = "Mi" },
+            //    new Tecla { Color = "Yellow", Key = "F", MusicalNote = "Fá" },
+            //    new Tecla { Color = "Red", Key = "S", MusicalNote = "Sol" },
+            //    new Tecla { Color = "Blue", Key = "L", MusicalNote = "Lá" },
+            //    new Tecla { Color = "Greem", Key = "I", MusicalNote = "Si" }
+            //};
+            //while (true)
+            //{
+            //    var read = Console.ReadLine();
+            //    foreach (var item in teclas)
+            //    {
+            //        if (item.Key == read)
+            //            item.Play();
+            //    }
+            //}
+
+            //Exercicio 8
+            //var novaEncomenda = new GestaoDeEntregaDeEncomenda();            
+            //novaEncomenda.DataDaRececao = DateTime.Now;
+            //novaEncomenda.MovimentoDaEncomenda();
+            //novaEncomenda.NifCliente = "297802233";
+            #endregion
+
+            #region Lista 25
+            //Exercicio 2 
+            //var car = new Veiculo(2010, "BMW", "CL03");
+            //var car2 = new Veiculo(2010, "Fiat", "Uno");
+
+            //Exercicio 3
+
+            var product = new NewProduct();
+
+            #endregion
         }
     }
 }

@@ -110,11 +110,11 @@ namespace Ficha17
                 {
                     if (alfabeto[i] == carac)
                     {
-                        acum.Add(i+1);
+                        acum.Add(i + 1);
                     }
-                }            
+                }
             }
-            for (int i = 0; i <acum.Count; i++)
+            for (int i = 0; i < acum.Count; i++)
             {
                 Console.Write($" {acum[i]} ");
             }
@@ -126,11 +126,11 @@ namespace Ficha17
             Console.WriteLine("Insira uma Frase!");
             string frase = Console.ReadLine();
 
-            for (int i =( frase.Length-1); i >= 0; i--)
+            for (int i = (frase.Length - 1); i >= 0; i--)
             {
                 Console.Write(frase[i]);
             }
-            
+
         }
         #endregion
         #region Exercicio 8
@@ -138,64 +138,158 @@ namespace Ficha17
         {
             Console.WriteLine("Insira uma Frase!");
             string frase = Console.ReadLine();
-            char result = ' ';
+
             char[] alfabeto = new char[26] {
             'a','b','c','d','e','f','g','h','i','j','k','l','m',
             'n','o','p','q','r','s','t','u','v','w','x','y','z'};
 
-            List<char> caracOrdem = new List<char>();
-
+            int[] caracOrdem = new int[frase.Length];
+            var index = 0;
             foreach (char carac in frase)
             {
-                for (int i = 0; i <alfabeto.Length; i++)
+                for (int i = 0; i < alfabeto.Length; i++)
                 {
                     if (alfabeto[i] == carac)
-                    {                        
-                       caracOrdem.Add(carac);
-                    }                    
+                    {
+                        caracOrdem[index] = (i);
+                        index++;
+                        break;
+                    }
                 }
-                for (int j = 0; j < caracOrdem.Count; j++)
-                {
-                    
-                }
-                Console.Write(caracOrdem[]);
-
             }
-           
 
+            var ordererArray = BubbleSort(caracOrdem);
+
+            for (int i = 0; i < ordererArray.Length; i++)
+            {
+                var current = ordererArray[i];
+                Console.Write($"{alfabeto[current]} ");
+            }
         }
+
+        public static int[] BubbleSort(int[] vetor)
+        {
+            int tamanho = vetor.Length;
+            int comparacoes = 0;
+            int trocas = 0;
+
+            for (int i = tamanho - 1; i >= 1; i--)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    comparacoes++;
+                    if (vetor[j] > vetor[j + 1])
+                    {
+                        int aux = vetor[j];
+                        vetor[j] = vetor[j + 1];
+                        vetor[j + 1] = aux;
+                        trocas++;
+                    }
+                }
+            }
+
+            return vetor;
+        }
+
         #endregion
         #region Exercicio 9
         public static void Exercicio9()
         {
+            Console.WriteLine(" Qual seu nome ? ");
+            string nome = Console.ReadLine();
 
+            Console.WriteLine($" Hello {nome}! ");
         }
         #endregion
-        #region Exercicio 10
+        #region Exercicio 10 
         public static void Exercicio10()
         {
-
+            Console.WriteLine("Insira uma Frase!");
+            string frase = Console.ReadLine();
+            int quantidadeDeLetras = 0;
+            int quantidadeDeCaracteresEsp = 0;
+            int quantidadeDeNumeros = 0;
+            char[] caracteresEspeciais = new char[] { '#', '*', '@', '&', '$', '_' };
+            char[] numeros = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+            foreach (char letra in frase.Replace(" ", ""))
+            {
+                for (int i = 0; i < caracteresEspeciais.Length; i++)
+                {
+                    if (letra == caracteresEspeciais[i])
+                    {
+                        quantidadeDeCaracteresEsp += 1;
+                    }
+                }
+                for (int j = 0; j < numeros.Length; j++)
+                {
+                    if (letra == numeros[j])
+                    {
+                        quantidadeDeNumeros++;
+                    }
+                }
+                if (letra != caracteresEspeciais.Length && letra != numeros.Length)
+                {
+                    quantidadeDeLetras++;
+                }
+            }
+            Console.WriteLine($"Letras: {quantidadeDeLetras - quantidadeDeCaracteresEsp - quantidadeDeNumeros}" +
+                $"\nCaracteres especiais: {quantidadeDeCaracteresEsp}" +
+                $"\nNumeros: {quantidadeDeNumeros}");
         }
         #endregion
         #region Exercicio 11
         public static void Exercicio11()
         {
+            Console.WriteLine("Insira uma Frase!");
+            string frase = Console.ReadLine();
 
+            var vogais = "aeiou";
+            int numVogais = 0;
+            int numConsoante = 0;
+
+            foreach (var letra in frase.Replace(" ", ""))
+            {
+                if (vogais.Contains(letra))
+                    numVogais += 1;
+                else
+                    numConsoante += 1;
+            }
+            Console.WriteLine($"Vogais: {numVogais}\nConsoante: {numConsoante}");
         }
         #endregion
-        #region Exercicio 12
+        #region Exercicio 12(Falta fazer)
         public static void Exercicio12()
         {
+            Console.WriteLine("Insira uma Frase!");
+            string frase = Console.ReadLine();
 
+            char[] alfabeto = new char[26] {
+            'a','b','c','d','e','f','g','h','i','j','k','l','m',
+            'n','o','p','q','r','s','t','u','v','w','x','y','z'};
+            int max = 0;
+            int indexMax = 0;
+            foreach (var carac in frase)
+            {
+                for (int i = 0; i < alfabeto.Length; i++)
+                {
+                    if (alfabeto[i] > max)
+                    {
+                        indexMax = i;
+                        max = alfabeto[i];
+                    }
+                }        
+            }
+           Console.WriteLine($"O caracter que mais se repete na frase" +
+                $" {frase} é {alfabeto[indexMax]}");
         }
         #endregion
-        #region Exercicio 13
+        #region Exercicio 13(Falta fazer)
         public static void Exercicio13()
         {
 
         }
         #endregion
-    
+
     }
 }
 

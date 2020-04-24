@@ -163,7 +163,7 @@ namespace Consola
             #endregion
 
             #region Lista 20
-            Ficha20Solucao.Exercicio1();
+            //Ficha20Solucao.Exercicio();
             #endregion
 
             #region Lista 21 (Falta fazer)

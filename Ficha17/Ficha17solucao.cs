@@ -25,12 +25,12 @@ namespace Ficha17
 
             Console.WriteLine("Insira 2ª frase!");
             string frase2 = Console.ReadLine();
-            bool podeimpr = true;
+            bool Podeimpr = true;
 
             if (frase1.Length != frase2.Length)
             {
                 Console.WriteLine("As frase são diferentes");
-                podeimpr = false;
+                Podeimpr = false;
             }
             else
             {
@@ -40,10 +40,10 @@ namespace Ficha17
                     {
                         Console.WriteLine("As frases são diferentes!");
                         break;
-                        podeimpr = false;
+                       
                     }
                 }
-                if (podeimpr)
+                if (Podeimpr)
                 {
                     Console.WriteLine("As frases são iguais!");
                 }

@@ -10,6 +10,8 @@ using Ficha24;
 using System;
 using System.Collections.Generic;
 using Ficha25;
+using Ficha26;
+using Ficha18;
 
 namespace Consola
 {
@@ -133,7 +135,15 @@ namespace Consola
             //Ficha17solucao.Exercicio13();
             #endregion
 
-            #region Lista 18 (Falta fazer)
+            #region Lista 18 
+            //Ficha18Solucao.IsLeapYear(2000,2020);
+            //Ficha18Solucao.Date();
+            //Ficha18Solucao.Exercicio4();
+            //Ficha18Solucao.DateTomorrow();
+            //Ficha18Solucao.YesterdaysTomorrow();       
+            //Ficha18Solucao.Exercicio7();
+            Ficha18Solucao.Exercicio9();
+            //Ficha18Solucao.Exercicio10();
             #endregion
 
             #region Lista 19 (Falta fazer)
@@ -153,9 +163,9 @@ namespace Consola
 
             #region Lista 24
             //Exercicio 2
-            //var veiculo = new Veiculo();
-            //veiculo.InserirMarca("VW");
-            //veiculo.InserirMarca("BMW");
+            //var vehicle = new Vehicle();
+            //vehicle.InsertBrand("VW");
+            //vehicle.InsertBrand("BMW");
 
             //Exercicio 3
             //var product = new Product();
@@ -268,9 +278,29 @@ namespace Consola
             //var car2 = new Veiculo(2010, "Fiat", "Uno");
 
             //Exercicio 3
+            //var product = new NewProduct();
+            #endregion
 
-            var product = new NewProduct();
+            #region Lista 26
+            //Grupo I
+            //var pen = new Pen();
+            //pen.Text = "Hello World";
+            //var paperContent = new PaperContent();
+            //paperContent.Write(pen);
+            //Console.WriteLine(paperContent.Text);
 
+
+            //Grupo II
+            //List<object> objetos = new List<object>();
+            //var pen = new Pen();
+            //var pencil = new Pencil();
+            //var coloredPencil = new ColoredPencil();
+            //var tecla = new Tecla();
+            //objetos.Add(pen);
+            //objetos.Add(pencil);
+            //objetos.Add(coloredPencil);
+            //objetos.Add(tecla);
+            //objetos.ExtensionRemover();
             #endregion
         }
     }

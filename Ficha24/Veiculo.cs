@@ -1,23 +1,24 @@
-﻿using System;
+﻿using Ficha26;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Ficha24
 {
     #region Exercicio 2
-    public class Veiculos
+    public class Vehicle : IVehicle
     {        
-        public int AnoDeMatricula { get; set; }
-        public string Marca { get; set; }
-        public string Modelo { get; set; }
+        public int YearOfEnrollment { get; set; }
+        public string Brand { get; set; }
+        public string Model { get; set; }
         public string CarState { get; set; }
 
-        public Veiculos()
+        public Vehicle()
         {
             this.CarState = "Desligado";
         }
 
-        public void Ligar()
+        public void TurnOn()
         {
             if (this.CarState == "Desligado")
             {
@@ -29,7 +30,7 @@ namespace Ficha24
             }
         }
 
-        public void Acelerar()
+        public void SpeedUp()
         {
             if (this.CarState == "Ligado")
             {
@@ -41,7 +42,7 @@ namespace Ficha24
             }
         }
 
-        public void Desligar()
+        public void Delicate()
         {
             if (this.CarState == "Travado")
             {
@@ -53,12 +54,12 @@ namespace Ficha24
             }
         }
 
-        public void RodarVolante()
+        public void RotateSteeringWheel()
         {
             Console.WriteLine("O volante foi rodado!");
         }
 
-        public void Travar()
+        public void Halt()
         {
             if (this.CarState == "Andando")
             {
@@ -70,29 +71,59 @@ namespace Ficha24
             }
         }
 
-        public void InserirMarca(string Marca)
+        public void InsertBrand(string brand)
         {
-            if (Marca.Length <= 2)
+            if (Brand.Length <= 2)
             {
                 Console.WriteLine("A marca do veiculo tem que ter mais que 3 caracteres!");
             }
             else
             {
-                this.Marca = Marca;
+                this.Brand = brand;
             }
         }
 
-        public void InserirAnoDeMatricula(int anoDeMatricula)
+        public void InsertYearOfEnrollment(int yearOfEnrollment)
         {
-            if (anoDeMatricula < 1950)
+            if (yearOfEnrollment < 1950)
             {
-                this.AnoDeMatricula = anoDeMatricula;
+                this.YearOfEnrollment = yearOfEnrollment;
             }
             else
             {
                 Console.WriteLine("O ano de matricula é menor do que 1950!");
             }
-        }       
+        }
+
+        public void Start()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Stop()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ChangeGear()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Break()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Accelerate()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void TurnWheel()
+        {
+            throw new NotImplementedException();
+        }
     }
     #endregion
 }

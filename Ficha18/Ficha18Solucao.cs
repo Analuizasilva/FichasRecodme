@@ -6,7 +6,7 @@ namespace Ficha18
     public class Ficha18Solucao
     {
         #region Exercicio1
-        public static void IsLeapYear(int year1, int year2)
+        public static void Exercicio1(int year1, int year2)
         {
             for (int year = year1; year <= year2; year++)
             {
@@ -19,7 +19,7 @@ namespace Ficha18
         #endregion
 
         #region Exercicio2
-        public static void Date()
+        public static void Exercicio2()
         {
             Console.WriteLine("Insira dia/mes/ano");
             DateTime date;
@@ -33,10 +33,6 @@ namespace Ficha18
             {
                 Console.WriteLine($"Nao foi possivel");
             }
-
-
-
-
         }
 
         #endregion
@@ -46,9 +42,7 @@ namespace Ficha18
         {
             var mouthName = DateTime.UtcNow.ToString("MMMMM");
             Console.WriteLine(mouthName);
-
         }
-
         #endregion
 
         #region Exercicio4
@@ -64,7 +58,7 @@ namespace Ficha18
         #endregion
 
         #region Exercicio5
-        public static void DateTomorrow()
+        public static void Exercicio5()
         {
             DateTime currentdate = DateTime.UtcNow;
             DateTime tomorrowsDate = currentdate.AddDays(1);
@@ -73,7 +67,7 @@ namespace Ficha18
         #endregion
 
         #region Exercicio6
-        public static void YesterdaysTomorrow()
+        public static void Exercicio6()
         {
             DateTime currentdate = DateTime.UtcNow;
             DateTime yesterdaysTomorrow = currentdate.AddDays(-1);

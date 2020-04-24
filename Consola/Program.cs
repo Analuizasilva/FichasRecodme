@@ -12,6 +12,8 @@ using System.Collections.Generic;
 using Ficha25;
 using Ficha26;
 using Ficha18;
+using Ficha19;
+using Ficha20;
 
 namespace Consola
 {
@@ -136,20 +138,32 @@ namespace Consola
             #endregion
 
             #region Lista 18 
-            //Ficha18Solucao.IsLeapYear(2000,2020);
-            //Ficha18Solucao.Date();
+            //Ficha18Solucao.Exercicio1(2000,2020);
+            //Ficha18Solucao.Exercicio2();
+            //Ficha18Solucao.Exercicio3();
             //Ficha18Solucao.Exercicio4();
-            //Ficha18Solucao.DateTomorrow();
-            //Ficha18Solucao.YesterdaysTomorrow();       
+            //Ficha18Solucao.Exercicio5();
+            //Ficha18Solucao.Exercicio6();       
             //Ficha18Solucao.Exercicio7();
-            Ficha18Solucao.Exercicio9();
+            //Ficha18Solucao.Exercicio9();
             //Ficha18Solucao.Exercicio10();
             #endregion
 
-            #region Lista 19 (Falta fazer)
+            #region Lista 19
+            //Ficha19Solucao.Exercicio1();
+            //Ficha19Solucao.Exercicio2();
+            //Ficha19Solucao.Exercicio3();
+            //Ficha19Solucao.Exercicio4();
+            //Ficha19Solucao.Exercicio5();
+            //Ficha19Solucao.Exercicio6();
+            //Ficha19Solucao.Exercicio7();
+            //Ficha19Solucao.Exercicio8();
+            //Ficha19Solucao.Exercicio9();
+            //Ficha19Solucao.Exercicio10();
             #endregion
 
-            #region Lista 20 (Falta fazer)
+            #region Lista 20
+            Ficha20Solucao.Exercicio1();
             #endregion
 
             #region Lista 21 (Falta fazer)

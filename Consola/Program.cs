@@ -14,6 +14,8 @@ using Ficha26;
 using Ficha18;
 using Ficha19;
 using Ficha20;
+using Ficha21;
+using Ficha22;
 
 namespace Consola
 {
@@ -166,10 +168,24 @@ namespace Consola
             //Ficha20Solucao.Exercicio();
             #endregion
 
-            #region Lista 21 (Falta fazer)
+            #region Lista 21(Faltam 3 Exercicios)
+            //Ficha21Solucao.Exercicio1();
+            //Ficha21Solucao.Exercicio2();
+            //Ficha21Solucao.Exercicio3();
+            //Ficha21Solucao.Exercicio4();
+            //Ficha21Solucao.Exercicio5();
+            //Ficha21Solucao.Exercicio6();
+            //Ficha21Solucao.Exercicio7();
+            //Ficha21Solucao.Exercicio8();
+            //Ficha21Solucao.Exercicio9();
+            //Ficha21Solucao.Exercicio10();
+            //Ficha21Solucao.Exercicio11();
+            //Ficha21Solucao.Exercicio12();
+
             #endregion
 
             #region Lista 22 (Falta fazer)
+           
             #endregion
 
             #region Lista 23 (Falta fazer)

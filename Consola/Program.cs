@@ -185,7 +185,8 @@ namespace Consola
             #endregion
 
             #region Lista 22 (Falta fazer)
-           
+            Ficha22solucao.Exercicio4(10, Ficha22solucao.TiposDeUrgencia.Verde, Ficha22solucao.MeiosDeTransporte.Terra,
+                Ficha22solucao.DimensoesDePacotes.Xl);
             #endregion
 
             #region Lista 23 (Falta fazer)
